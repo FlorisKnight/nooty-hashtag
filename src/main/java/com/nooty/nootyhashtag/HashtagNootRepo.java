@@ -5,8 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface HashtagNootRepo extends CrudRepository<HashtagNoot, String> {
 
-    Iterable<HashtagNoot> findByNootIdAndAndHashtagId(String nootId, String hashtagId);
-
     Iterable<HashtagNoot> findByHashtagId(String hashtagId);
 
     boolean existsByHashtagIdAndNootId(String hashtagId, String nootId);

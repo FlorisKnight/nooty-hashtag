@@ -18,9 +18,6 @@ import java.util.UUID;
 public class DeleteNootReciever {
 
     @Autowired
-    private HashtagRepo hashtagRepo;
-
-    @Autowired
     private HashtagNootRepo hashtagNootRepo;
 
 
