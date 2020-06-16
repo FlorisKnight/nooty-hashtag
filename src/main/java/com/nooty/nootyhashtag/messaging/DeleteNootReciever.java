@@ -30,7 +30,7 @@ public class DeleteNootReciever {
     private DeleteNootReciever() throws Exception {
         gson = new Gson();
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("nooty-rabbitmq");
         //factory.setHost("172.18.0.20");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
